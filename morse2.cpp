@@ -78,8 +78,9 @@ int main()
     char caracter;
     init();
 
-    while (cin>>caracter)
+    while (cin>>noskipws>>caracter)
     {
+        //cout<<caracter<<":";
         if (char2int(caracter)==-1)
         {
                 cout<<"   ";
